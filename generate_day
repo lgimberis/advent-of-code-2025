@@ -1,7 +1,6 @@
 #!/bin/bash
 num=$1
 [ ! -f problems/${num}_data.txt ] && touch problems/${num}_data.txt
-[ ! -f problems/${num}_description.txt ] && touch problems/${num}_description.txt
 if [ ! -f src/bin/$num.rs ]; then
     touch src/bin/$num.rs
     echo "use advent_of_code_2024::read_today_data_file;
@@ -29,13 +28,13 @@ mod tests {
     #[test]
     fn test_part_one_as_given() {
         let result = part_one(&String::from(EXAMPLE_DATA));
-        assert_eq!(result, u64::MAX);
+        assert_eq!(result, i64::MAX);
     }
 
     #[test]
     fn test_part_two_as_given() {
         let result = part_two(&String::from(EXAMPLE_DATA));
-        assert_eq!(result, u64::MAX);
+        assert_eq!(result, i64::MAX);
     }
 }
 

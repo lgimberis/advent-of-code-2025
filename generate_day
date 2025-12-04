@@ -3,7 +3,7 @@ num=$1
 [ ! -f problems/${num}_data.txt ] && touch problems/${num}_data.txt
 if [ ! -f src/bin/$num.rs ]; then
     touch src/bin/$num.rs
-    echo "use advent_of_code_2024::read_today_data_file;
+    echo "use advent_of_code_2025::read_today_data_file;
 
 fn parse_input(file: &String) -> &String {
     file

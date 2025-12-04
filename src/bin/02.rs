@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use advent_of_code_2024::read_today_data_file;
+use advent_of_code_2025::read_today_data_file;
 
 fn parse_input(file: &String) -> Vec<(&str, &str)> {
     file.strip_suffix("\r\n")
